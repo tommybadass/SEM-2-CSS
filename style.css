@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3f2fd;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #c62828, #ff4081); /* Gradient background */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-container {
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2; /* Bring title above background */
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.album-cover {
+  margin-bottom: 20px;
+}
+
+.album-cover img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lyrics {
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  border: 2px solid #c62828;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.video-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1e88e5;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 3em;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  .lyrics {
+      font-size: 1em;
+  }
+}
